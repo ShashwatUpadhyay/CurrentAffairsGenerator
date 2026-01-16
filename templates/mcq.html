@@ -1,0 +1,46 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "MCQ Quiz" %} - {% trans "Current Affairs" %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>{% trans "Practice Quiz" %} - {% trans "MCQ Mode" %}</h1>
+                <button id="lang-toggle" class="lang-toggle">English</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiz Progress -->
+    <div class="container">
+        <div class="quiz-progress">
+            <div class="progress-info">
+                <span id="question-progress">
+                    {% trans "Question" %} <span id="current-question">1</span> / <span id="total-questions">5</span>
+                </span>
+            </div>
+            <div class="score">
+                {% trans "Score" %}: <span id="score-display">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Container -->
+    <main class="quiz-container">
+        <div id="quiz-container">
+            <div class="loading">{% trans "Loading questions..." %}</div>
+        </div>
+    </main>
+
+    <script src="{% static 'js/quiz.js' %}"></script>
+</body>
+</html>

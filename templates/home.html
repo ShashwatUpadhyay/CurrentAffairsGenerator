@@ -1,0 +1,61 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "AI-Powered Current Affairs Platform for UPSC & BPSC" %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>{% trans "AI-Powered Current Affairs Platform for UPSC & BPSC" %}</h1>
+                <button id="lang-toggle" class="lang-toggle">English</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <input type="text" 
+                   id="search-bar" 
+                   class="search-bar" 
+                   placeholder="{% trans "Search News" %}...">
+        </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <section class="category-tabs">
+        <div class="container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+            <button class="category-tab active">{% trans "All" %}</button>
+            <button class="category-tab">{% trans "Sports" %}</button>
+            <button class="category-tab">{% trans "Education" %}</button>
+            <button class="category-tab">{% trans "Health" %}</button>
+            <button class="category-tab">{% trans "Economy" %}</button>
+            <button class="category-tab">{% trans "Polity" %}</button>
+            <button class="category-tab">{% trans "Science" %}</button>
+        </div>
+    </section>
+
+    <!-- News Feed Header -->
+    <div class="container">
+        <div class="section-header">
+            {% trans "Current Affairs News Feed" %}
+        </div>
+    </div>
+
+    <!-- News Grid -->
+    <main class="container">
+        <div id="news-grid" class="news-grid">
+            <div class="loading">{% trans "Loading news..." %}</div>
+        </div>
+    </main>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

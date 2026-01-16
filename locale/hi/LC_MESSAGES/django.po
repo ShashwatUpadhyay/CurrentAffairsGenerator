@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-17 00:08+0530\n"
+"PO-Revision-Date: 2026-01-16 22:34+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: Hindi <hi@li.org>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.3\n"
+
+#: .\ca_gen\settings.py:115
+msgid "English"
+msgstr "अंग्रेज़ी"
+
+#: .\ca_gen\settings.py:116
+msgid "Hindi"
+msgstr "हिन्दी"
+
+#: .\templates\home.html:8 .\templates\home.html:16
+msgid "AI-Powered Current Affairs Platform for UPSC & BPSC"
+msgstr ""
+
+#: .\templates\home.html:28
+msgid "Search News"
+msgstr ""
+
+#: .\templates\home.html:35
+msgid "All"
+msgstr ""
+
+#: .\templates\home.html:36
+msgid "Sports"
+msgstr ""
+
+#: .\templates\home.html:37
+msgid "Education"
+msgstr ""
+
+#: .\templates\home.html:38
+msgid "Health"
+msgstr ""
+
+#: .\templates\home.html:39
+msgid "Economy"
+msgstr ""
+
+#: .\templates\home.html:40
+msgid "Polity"
+msgstr ""
+
+#: .\templates\home.html:41
+msgid "Science"
+msgstr ""
+
+#: .\templates\home.html:48
+msgid "Current Affairs News Feed"
+msgstr ""
+
+#: .\templates\home.html:55
+msgid "Loading news..."
+msgstr ""
+
+#: .\templates\mcq.html:8
+msgid "MCQ Quiz"
+msgstr ""
+
+#: .\templates\mcq.html:8
+msgid "Current Affairs"
+msgstr ""
+
+#: .\templates\mcq.html:17
+msgid "Practice Quiz"
+msgstr ""
+
+#: .\templates\mcq.html:17
+msgid "MCQ Mode"
+msgstr ""
+
+#: .\templates\mcq.html:28
+msgid "Question"
+msgstr ""
+
+#: .\templates\mcq.html:32
+msgid "Score"
+msgstr ""
+
+#: .\templates\mcq.html:40
+msgid "Loading questions..."
+msgstr ""
+
+#~ msgid "Welcome to our application"
+#~ msgstr "हमारे एप्लिकेशन में आपका स्वागत है"

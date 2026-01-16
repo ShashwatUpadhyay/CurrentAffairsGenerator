@@ -1,0 +1,266 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-green: #10b981;
+  --dark-green: #059669;
+  --black: #000000;
+  --dark-gray: #1f2937;
+  --medium-gray: #6b7280;
+  --light-gray: #e5e7eb;
+  --white: #ffffff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px 0;
+  border-bottom: 3px solid var(--primary-green);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Language Toggle */
+.lang-toggle {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border: 2px solid var(--dark-green);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background-color: var(--dark-green);
+}
+
+/* Search Bar */
+.search-section {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  border: 2px solid var(--light-gray);
+  font-size: 1rem;
+  background-color: var(--white);
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: var(--primary-green);
+}
+
+/* Category Tabs */
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.category-tab {
+  padding: 10px 20px;
+  background-color: var(--white);
+  border: 2px solid var(--light-gray);
+  color: var(--dark-gray);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.category-tab:hover,
+.category-tab.active {
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--primary-green);
+}
+
+/* Section Header */
+.section-header {
+  background-color: var(--dark-gray);
+  color: var(--white);
+  padding: 15px 20px;
+  text-align: center;
+  margin: 30px 0 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* News Grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 30px 0;
+}
+
+/* News Card */
+.news-card {
+  background-color: var(--white);
+  border: 2px solid var(--light-gray);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.news-card:hover {
+  border-color: var(--primary-green);
+  transform: translateY(-5px);
+}
+
+.news-card-label {
+  background-color: var(--light-gray);
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  color: var(--medium-gray);
+  font-weight: 600;
+}
+
+.news-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: var(--light-gray);
+}
+
+.news-card-content {
+  padding: 20px;
+}
+
+.news-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+
+.news-card-meta {
+  font-size: 0.85rem;
+  color: var(--medium-gray);
+  margin-bottom: 10px;
+}
+
+.news-card-description {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.news-card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--white);
+  color: var(--dark-gray);
+  border-color: var(--dark-gray);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+
+.btn-success {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border-color: var(--dark-green);
+}
+
+.btn-success:hover {
+  background-color: var(--dark-green);
+}
+
+/* Loading & Empty States */
+.loading,
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--medium-gray);
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-tabs {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
