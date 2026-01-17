@@ -13,9 +13,14 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 from pathlib import Path
 import os
 from django.utils.translation import gettext_lazy as _
+import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = environ.Env()
+
+env.read_env(os.path.join(BASE_DIR, ".env"), overwrite=True)
 
 
 # Quick-start development settings - unsuitable for production
@@ -151,3 +156,4 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 12,  # Number of items per page
 }
 
+DETECTLENGUAGE_API_KEY = env('DETECTLENGUAGE_API_KEY')
