@@ -20,6 +20,7 @@ function initializeLanguageToggle() {
   toggleBtn.addEventListener("click", function () {
     currentLanguage = currentLanguage === "en" ? "hi" : "en";
     localStorage.setItem("language", currentLanguage);
+    window.location.href = `/?lang=${currentLanguage}`;
     updateToggleText(toggleBtn);
     // Reset pagination and reload
     currentPage = 1;

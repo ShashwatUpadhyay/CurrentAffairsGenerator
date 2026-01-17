@@ -30,6 +30,9 @@ def questions_api(request, news_uid):
 def news_api(request):
     from rest_framework.pagination import PageNumberPagination
     
+    lang = request.GET.get('lang', 'en')
+    translation.activate(lang)
+    
     news = News.objects.filter(questions_generated=True).order_by('-created_at')
     
     # Apply pagination

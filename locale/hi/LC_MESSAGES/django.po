@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-17 00:08+0530\n"
-"PO-Revision-Date: 2026-01-16 22:34+0000\n"
+"POT-Creation-Date: 2026-01-17 17:41+0530\n"
+"PO-Revision-Date: 2026-01-17 17:40+0530\n"
 "Last-Translator:   <>\n"
 "Language-Team: Hindi <hi@li.org>\n"
 "Language: hi\n"
@@ -18,85 +18,85 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.3\n"
 
-#: .\ca_gen\settings.py:115
+#: .\ca_gen\settings.py:120
 msgid "English"
 msgstr "अंग्रेज़ी"
 
-#: .\ca_gen\settings.py:116
+#: .\ca_gen\settings.py:121
 msgid "Hindi"
 msgstr "हिन्दी"
 
 #: .\templates\home.html:8 .\templates\home.html:16
 msgid "AI-Powered Current Affairs Platform for UPSC & BPSC"
-msgstr ""
+msgstr "UPSC और BPSC के लिए AI-संचालित करंट अफेयर्स प्लेटफॉर्म"
 
 #: .\templates\home.html:28
 msgid "Search News"
-msgstr ""
+msgstr "समाचार खोजें"
 
 #: .\templates\home.html:35
 msgid "All"
-msgstr ""
+msgstr "सभी"
 
 #: .\templates\home.html:36
 msgid "Sports"
-msgstr ""
+msgstr "खेल"
 
 #: .\templates\home.html:37
 msgid "Education"
-msgstr ""
+msgstr "शिक्षा"
 
 #: .\templates\home.html:38
 msgid "Health"
-msgstr ""
+msgstr "स्वास्थ्य"
 
 #: .\templates\home.html:39
 msgid "Economy"
-msgstr ""
+msgstr "अर्थव्यवस्था"
 
 #: .\templates\home.html:40
 msgid "Polity"
-msgstr ""
+msgstr "राजनीति"
 
 #: .\templates\home.html:41
 msgid "Science"
-msgstr ""
+msgstr "विज्ञान"
 
 #: .\templates\home.html:48
 msgid "Current Affairs News Feed"
-msgstr ""
+msgstr "करेंट अफेयर्स समाचार फ़ीड"
 
 #: .\templates\home.html:55
 msgid "Loading news..."
-msgstr ""
+msgstr "समाचार लोड हो रहा है..."
 
 #: .\templates\mcq.html:8
 msgid "MCQ Quiz"
-msgstr ""
+msgstr "बहुविकल्पीय प्रश्न प्रश्नोत्तरी"
 
 #: .\templates\mcq.html:8
 msgid "Current Affairs"
-msgstr ""
+msgstr "सामयिकी"
 
 #: .\templates\mcq.html:17
 msgid "Practice Quiz"
-msgstr ""
+msgstr "अभ्यास प्रश्नोत्तरी"
 
 #: .\templates\mcq.html:17
 msgid "MCQ Mode"
-msgstr ""
+msgstr "एमसीक्यू मोड"
 
 #: .\templates\mcq.html:28
 msgid "Question"
-msgstr ""
+msgstr "सवाल"
 
 #: .\templates\mcq.html:32
 msgid "Score"
-msgstr ""
+msgstr "अंक"
 
 #: .\templates\mcq.html:40
 msgid "Loading questions..."
-msgstr ""
+msgstr "प्रश्न लोड हो रहे हैं..."
 
 #~ msgid "Welcome to our application"
 #~ msgstr "हमारे एप्लिकेशन में आपका स्वागत है"
