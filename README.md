@@ -17,7 +17,7 @@ A bilingual (English/Hindi) web application that automatically fetches current a
 
 - Python 3.10 or higher
 - Git
-- Virtual environment support (venv)
+- Virtual environment support (virtualenv)
 
 ## 🛠️ Installation & Setup
 
